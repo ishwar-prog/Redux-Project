@@ -20,11 +20,11 @@ const searchSlice = createSlice({
             state.results = action.payload
         },
         setLoading(state){
-            state.loading = true,
+            state.loading = true
             state.error = null
         },
         setError(state, action){
-            state.error = action.payload,
+            state.error = action.payload
             state.loading=false
         },
         clearResults(state){
@@ -33,6 +33,6 @@ const searchSlice = createSlice({
     }
 })
 
-export const {setquery, setactiveTabs,setError,setLoading,setResults,clearResults} = searchSlice.action
+export const {setQuery, setActiveTabs, setError, setLoading, setResults, clearResults} = searchSlice.actions
 
 export default searchSlice.reducer;

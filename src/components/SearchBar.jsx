@@ -1,7 +1,7 @@
 import React from 'react'
 import { useState } from 'react'
 import { useDispatch } from 'react-redux'
-import { setQuery } from '../features/searchSlice'
+import { setQuery } from '../redux/features/searchSlice.js'
 
 const SearchBar = () => {
 
